@@ -214,11 +214,31 @@ body,td,th {
 <div style="text-align: center;">
 <a href='javascript:history.go(0)'>激活不了？点击更换注册码</a>
 </div>
+	<script type="text/javascript">
+ function copyText() {
+  var text = document.getElementById("text").innerText;
+  var input = document.getElementById("input");
+  input.value = text; // 修改文本框的内容
+  input.select(); // 选中文本
+  document.execCommand("copy"); // 执行浏览器复制命令
+  alert("复制成功");
+ }
+ </script>
+	<style type="text/css">
+ .wrapper {position: relative;}
+ #input {position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;}
+</style>
+	
 <p>提示</p>
 <p>1,如果是手机版服务端提示注册，请升级到新版就好。</p>
 <p>2.新版本升级服务请咨询admin@newjxc.com</p>
 <p>3.长期使用建议购买正版软件.</p>
-<p>4.<a href='https://Newjxc.github.io'>备用地址</a>  </p>
+ 
+<div class="wrapper">
+ <p id="text">备用地址点击复制https://Newjxc.github.io</p>
+ <textarea id="input">这是幕后</textarea>
+ <button onclick="copyText()">copy</button>
+</div>
 </body>
 </html>
 
