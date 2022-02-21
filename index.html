@@ -397,10 +397,49 @@ body,td,th {
 		}
 	}
 </style>
+	<style type="text/css">
+.main{
+  color: #666;margin-top: 50px;
+}
+/* 定义keyframe动画，命名为blink */
+@keyframes blink{
+  0%{opacity: 1;}
+  100%{opacity: 0;} 
+}
+/* 添加兼容性前缀 */
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+    0% {opacity: 1; } 
+    100% { opacity: 0;}
+}
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+/* 定义blink类*/
+.blink{
+    color: #dd4814;
+    animation: blink 1s linear infinite;  
+    /* 其它浏览器兼容性前缀 */
+    -webkit-animation: blink 1s linear infinite;
+    -moz-animation: blink 1s linear infinite;
+    -ms-animation: blink 1s linear infinite;
+    -o-animation: blink 1s linear infinite;
+}
+</style>
 <p>提示</p>
 <p>1,如果是手机版服务端提示注册，请升级到新版就好。</p>
 <p>2.新版本升级服务请咨询admin@newjxc.com</p>
-<p>3.长期使用建议购买正版软件.<a href='http://www.zyaqsm.cn/zfsys.html' target="_blank">留言咨询</a></p>
+<p>3.长期使用建议购买正版软件.<div class="main">
+	文字闪烁：<span class="blink"><a href='http://www.zyaqsm.cn/zfsys.html' target="_blank">留言咨询</a></span>
+</div></p>
  
 <div class="wrapper">
 <!-- <p id="text">https://Newjxc.github.io  <textarea id="input"></textarea> <button onclick="copyText()">备用地址点击复制</button> </p> -->
