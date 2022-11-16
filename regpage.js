@@ -1,5 +1,5 @@
 
-<SCRIPT type=text/javascript>
+<SCRIPT>
 //指定条目数
 tips = new Array(110);
 //条目内容
@@ -116,9 +116,8 @@ tips[109] = '辱，莫大于不知耻。 —— 王通';
 tips[110] = '君子忧道不忧贫。 —— 孔丘';
 index = Math.floor(Math.random() * tips.length);
 window.document.title += " - "+tips[index];
-</SCRIPT>
-      <SCRIPT type=text/javascript>
-                        //指定条目数
+
+
                         code = new Array(15);
                         //条目内容
                         code[0] = 'AS8pjHRt=tY4IljjcSX6K2e8QKKcMEU0kdip6fjpKZIMG7r';
@@ -139,8 +138,8 @@ window.document.title += " - "+tips[index];
 				    				 
                         index = Math.floor(Math.random() * code.length);
                         document.getElementById("c1").innerHTML = code[index];
-                    </SCRIPT>
-					  <SCRIPT type=text/javascript>
+               
+					
                         //指定条目数
                         code = new Array(15);
                         //条目内容
