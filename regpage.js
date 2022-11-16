@@ -1,5 +1,4 @@
 
-<SCRIPT>
 //指定条目数
 tips = new Array(110);
 //条目内容
@@ -161,4 +160,4 @@ window.document.title += " - "+tips[index];
 						 
                         index = Math.floor(Math.random() * code.length);
                         document.getElementById("c2").innerHTML = code[index];
-                    </SCRIPT>
+
